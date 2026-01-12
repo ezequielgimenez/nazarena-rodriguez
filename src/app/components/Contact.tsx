@@ -78,7 +78,7 @@ export default function ContactComp() {
         <div className="w-[300px] sm:w-[500px] md:w-[600px] xl:w-[1200px] h-px bg-[#4A5048]/10 mt-[60px] "></div>
         <p className="font-sans font-light text-[14px] text-[#757575] text-center pt-8">
           © 2026 Lic. Nazarena Rodriguez MP 4849 - Nutricionista. <br /> Todos
-          los derechos reservados. <br /> Desarrollado por EG Sitios
+          los derechos reservados. <br />
         </p>
       </div>
     </div>
