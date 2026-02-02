@@ -21,6 +21,7 @@ export default function AboutMeComp() {
             height={511}
             unoptimized
             priority
+            className="select-none pointer-events-none"
           />
 
           <Image
@@ -28,7 +29,7 @@ export default function AboutMeComp() {
             alt="carousel desktop"
             width={404}
             height={492}
-            className="hidden lg:block lg:pl-[50px]"
+            className="hidden lg:block lg:pl-[50px] select-none pointer-events-none"
             unoptimized
             priority
           />

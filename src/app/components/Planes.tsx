@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const contenido = [
   {
-    imagenes: ["/planes/plan1-a.png", "/planes/plan1-b.png"],
+    imagenes: ["/planes/plan1-a.webp", "/planes/plan1-b.webp"],
     titulo: "Consulta Eventual",
     subtitulo: "DUDAS PUNTUALES",
     descripcion:
@@ -21,7 +21,7 @@ const contenido = [
   },
 
   {
-    imagenes: ["/planes/plan2.png"],
+    imagenes: ["/planes/plan2.webp"],
     titulo: "Antropometría",
     subtitulo:
       "EVALUACIÓN CORPORAL PRECISA BAJO PROTOCOLO INTERNACIONAL ISAK I",
@@ -40,7 +40,7 @@ const contenido = [
   },
 
   {
-    imagenes: ["/planes/plan3-2.png"],
+    imagenes: ["/planes/plan3-2.webp"],
     titulo: "Integral Nutrición + Antropometría",
     subtitulo: "EVALUACIÓN CORPORAL Y ACOMPAÑAMIENTO NUTRICIONAL.",
     descripcion:
@@ -62,7 +62,7 @@ const contenido = [
   },
 
   {
-    imagenes: ["/planes/plan4-2.png"],
+    imagenes: ["/planes/plan4-2.webp"],
     titulo: "Seguimiento corto",
     subtitulo:
       "ACOMPAÑAMIENTO NUTRICIONAL CON EVALUACIÓN Y AJUSTES PERSONALIZADOS.",
@@ -86,9 +86,9 @@ const contenido = [
 
   {
     imagenes: [
-      "/planes/plan5-a.png",
-      "/planes/plan5-b.png",
-      "/planes/plan5-c.png",
+      "/planes/plan5-a.webp",
+      "/planes/plan5-b.webp",
+      "/planes/plan5-c.webp",
     ],
     titulo: "Pro 3 Meses",
     subtitulo:
@@ -114,7 +114,7 @@ const contenido = [
   },
 
   {
-    imagenes: ["/planes/plan6-2.png"],
+    imagenes: ["/planes/plan6-2.webp"],
     titulo: "Acompañamiento Nutricional 3 Meses",
     subtitulo:
       "SEGUIMIENTO PERSONALIZADO, SIN MEDICIONES CORPORALES, CENTRADO EN HÁBITOS Y BIENESTAR.",
@@ -186,7 +186,7 @@ export default function PlanesComp() {
                       height={219}
                       priority
                       unoptimized
-                      className="rounded-t-[12px]"
+                      className="rounded-t-[12px] select-none pointer-events-none"
                     />
                   )}
 
@@ -201,7 +201,7 @@ export default function PlanesComp() {
                             height={219}
                             priority
                             unoptimized
-                            className="rounded-t-[12px]"
+                            className="rounded-t-[12px] select-none pointer-events-none"
                           />
                         </div>
                       ))}
@@ -217,7 +217,7 @@ export default function PlanesComp() {
                           alt={item.titulo}
                           fill
                           sizes="50vw"
-                          className="object-cover pr-1"
+                          className="object-cover pr-1 select-none pointer-events-none"
                         />
                       </div>
 
@@ -235,7 +235,7 @@ export default function PlanesComp() {
                               alt={item.titulo}
                               fill
                               sizes="50vw"
-                              className="object-cover"
+                              className="object-cover select-none pointer-events-none"
                             />
                           </div>
                         ))}
