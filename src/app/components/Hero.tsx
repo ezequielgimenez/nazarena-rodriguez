@@ -59,40 +59,31 @@ export default function HeroSectionComp() {
           const desktopImg = content.hero.imagenes[index];
           const mobileImg = content.hero.imagenesMobile[index];
 
+          const isFirst = index === 0;
+
           return (
             <div
               key={index}
-              className="
-              relative min-w-full
-              h-[85vh]
-              sm:h-[80vh]
-              md:h-[90vh]
-              xl:h-[650px]
-            "
+              className="relative min-w-full h-[85vh] sm:h-[80vh] md:h-[90vh] xl:h-[650px]"
             >
-              {/* Desktop */}
               <Image
                 src={desktopImg}
-                alt="carousel desktop"
+                alt="Hero"
                 fill
-                sizes="(min-width: 1024px) 100vw, 100vw"
+                sizes="100vw"
                 className="hidden lg:block object-cover"
-                unoptimized
-                priority={index === 0}
+                priority={isFirst}
               />
-
-              {/* Mobile */}
 
               <Image
                 src={mobileImg}
-                alt="carousel mobile"
+                alt="Hero"
                 fill
-                sizes="(max-width: 1023px) 100vw, 100vw"
+                sizes="100vw"
                 className="block lg:hidden object-cover"
-                priority={index === 0}
+                priority={isFirst}
               />
 
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/40" />
             </div>
           );
