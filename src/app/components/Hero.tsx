@@ -66,6 +66,7 @@ export default function HeroSectionComp() {
               key={index}
               className="relative min-w-full h-[85vh] sm:h-[80vh] md:h-[90vh] xl:h-[650px]"
             >
+              {/* Desktop */}
               <Image
                 src={desktopImg}
                 alt="Hero"
@@ -73,8 +74,10 @@ export default function HeroSectionComp() {
                 sizes="100vw"
                 className="hidden lg:block object-cover"
                 priority={isFirst}
+                fetchPriority={isFirst ? "high" : "auto"}
               />
 
+              {/* Mobile (LCP real en mobile) */}
               <Image
                 src={mobileImg}
                 alt="Hero"
@@ -82,8 +85,10 @@ export default function HeroSectionComp() {
                 sizes="100vw"
                 className="block lg:hidden object-cover"
                 priority={isFirst}
+                fetchPriority={isFirst ? "high" : "auto"}
               />
 
+              {/* Overlay */}
               <div className="absolute inset-0 bg-black/40" />
             </div>
           );
