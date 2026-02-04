@@ -78,7 +78,25 @@ export default function ContactComp() {
         <div className="w-[300px] sm:w-[500px] md:w-[600px] xl:w-[1200px] h-px bg-[#4A5048]/10 mt-[60px] "></div>
         <p className="font-sans font-light text-[14px] text-[#757575] text-center pt-8">
           © 2026 Lic. Nazarena Rodriguez MP 4849 - Nutricionista. <br /> Todos
-          los derechos reservados. <br />
+          los derechos reservados. <br /> Desarrollado por{" "}
+          <a
+            href="https://www.egsitios.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+            font-normal
+            text-[#757575]
+            hover:text-black
+            underline
+            underline-offset-4
+            decoration-transparent
+            hover:decoration-black
+            transition-all
+            duration-300
+          "
+          >
+            EG Sitios.
+          </a>
         </p>
       </div>
     </div>
