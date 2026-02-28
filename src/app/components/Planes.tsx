@@ -164,7 +164,7 @@ export default function PlanesComp() {
       {/* container cards */}
       <div
         data-aos="fade-up"
-        className="flex justify-center flex-wrap gap-15.75 "
+        className="flex justify-center flex-wrap max-w-[1500px] mx-auto gap-[50px] px-8"
       >
         {/* card */}
         {contenido

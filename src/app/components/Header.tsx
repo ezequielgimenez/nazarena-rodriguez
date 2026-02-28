@@ -11,7 +11,7 @@ export default function HeaderComp() {
     setShowNav(!showNav);
   };
   return (
-    <header>
+    <header className="bg-white w-full">
       <div className="lg:hidden relative flex items-center bg-white h-22.5 px-4">
         {/* Burger */}
         <button onClick={openNav} className="z-10">
@@ -102,14 +102,14 @@ export default function HeaderComp() {
         </Link>
       </div>
 
-      <div className="hidden lg:flex justify-between bg-white h-24">
+      <div className="hidden w-full lg:flex pl-36 pr-12 justify-between bg-white h-[116px]">
         <div className="cursor-pointer">
           <Link href="/">
             <Image
-              src="/logo/logo.png"
+              src="/logo/logo-header.png"
               alt="Logo-Nazarena-Rodriguez"
-              width={158}
-              height={88}
+              width={113}
+              height={116}
               priority
               unoptimized
               className="p-2"
