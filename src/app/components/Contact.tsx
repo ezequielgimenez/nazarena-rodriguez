@@ -80,7 +80,7 @@ export default function ContactComp() {
           © 2026 Lic. Nazarena Rodriguez MP 4849 - Nutricionista. <br /> Todos
           los derechos reservados. <br /> Desarrollado por{" "}
           <a
-            href="https://www.egsitios.com.ar/"
+            href="https://www.webkelar.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -95,7 +95,7 @@ export default function ContactComp() {
             duration-300
           "
           >
-            EG Sitios.
+            Webkelar Digital.
           </a>
         </p>
       </div>
